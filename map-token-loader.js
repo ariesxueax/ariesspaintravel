@@ -2,7 +2,7 @@
   if (localStorage.getItem("roadbook.mapboxToken")) return;
 
   try {
-    const response = await fetch("https://ariesxueax.github.io/arieslab/app.js", { cache: "force-cache" });
+    const response = await fetch("https://ariesxueax.github.io/ariesspaintravelh5/app.js", { cache: "force-cache" });
     const source = await response.text();
     const match = source.match(/pk\.[A-Za-z0-9._-]+/);
     if (!match) return;
